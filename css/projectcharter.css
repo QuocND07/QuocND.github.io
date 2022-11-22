@@ -1,0 +1,115 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+/* Chia cột cho các box */
+body .container {
+  padding: 16px;
+  box-shadow: 0 0 6px 10px rgba(173, 181, 189, 0.5);
+  margin: 16px auto;
+  position: relative;
+}
+.grid {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr;
+  grid-template-rows: 1fr auto;
+  gap: 14px;
+}
+h5 {
+  font-size: 18px;
+  font-weight: 500;
+}
+
+img {
+  width: 30px;
+  height: 30px;
+  margin-top: 1rem;
+}
+.container {
+  background-color: #364fc7;
+}
+.heading-title {
+  font-size: 1.75rem;
+  padding: 1rem 0;
+  border-bottom: 1px solid #adb5bd;
+  color: #364fc7;
+}
+.goals-box,
+.team-box,
+.timeline-box,
+.scopes-box,
+.primary-box {
+  background-color: #edf2ff;
+}
+
+/* phần GOALS */
+#goals .box-content .content {
+  border-bottom: 1px solid #dee2e6;
+}
+
+/*phần TEAM và PRIMARY */
+#team img,
+#primary img {
+  width: 24px;
+  height: 24px;
+  margin-top: 0.5rem;
+}
+/* phần TIMELINE */
+.number {
+  width: 45px;
+  height: 40px;
+  margin-top: 0.5rem;
+  border: 1px solid #343a40;
+  border-radius: 50%;
+  background-color: #b197fc;
+  color: #edf2ff;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#timeline {
+  grid-row: 1/-1;
+  grid-column: 3/4;
+}
+#timeline .child-content {
+  border-bottom: 1px dashed #b197fc;
+}
+#timeline .child-content p {
+  margin-bottom: 00.5rem;
+}
+#team {
+  grid-column: 2/3;
+  grid-row: 1/2;
+}
+/*Flex-box*/
+.box-content {
+  display: flex;
+  flex-direction: column;
+}
+.box-content .content {
+  display: flex;
+}
+#res-scopes {
+  display: flex;
+}
+/* Back home */
+a:link,
+a:visited {
+  text-decoration: none;
+  color: #dee2e6;
+  width: 6rem;
+  height: 2.25rem;
+  background-color: #364fc7;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  border-radius: 16px;
+  text-transform: uppercase;
+  transform: translate(-110%, -100%);
+  font-size: 14px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
